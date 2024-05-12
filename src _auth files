@@ -1,4 +1,4 @@
-//auth.tsx
+//AuthService.tsx
 import { getLocalAttributes } from "../utils/commonFunction";
 
 export const isAuthenticated = (userName: string, password: string) => {
