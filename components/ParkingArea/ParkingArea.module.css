@@ -1,0 +1,68 @@
+.parentDiv{
+    position: relative;
+}
+.mainDiv{
+    height: 100vh;
+}
+.subMenu{
+    margin: 10px 0;
+    height: 30px;
+    background-color: #283030;
+    opacity: .8;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#parkingLevel{
+    outline: none;
+    width: 80px;
+    padding: 2px;
+    color: #FF1493;
+    &:hover {
+        color: #000;
+    }
+  }
+#parkingLevel option { color: #000;}
+  
+.button{
+    background-color: #283030;
+    border: 1px solid white;
+    padding: 5px;
+    width:80px;
+    &:hover {
+        background-color: #FF1493;
+        -webkit-filter: brightness(50%);
+        -webkit-transition: 0.2s all;
+        transform: scale(1.1);
+        border: none;
+    }
+}
+.containerDiv{
+    margin-top:20px;
+    margin-left: 10vw;;
+    background-color: #283030;
+    opacity: .8;
+    height: 70%;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap:5% */
+    flex-wrap: wrap;
+}
+.parkingSlots{
+    background-color: white;
+    color: #283030;
+    text-align: center;
+    width: 20%;
+    /* height: 20%; */
+    padding: 25px;
+    margin: 25px;
+    &:hover{
+        -webkit-filter: brightness(50%);
+    }
+}
