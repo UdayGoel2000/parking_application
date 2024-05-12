@@ -1,0 +1,420 @@
+{
+    "levels": [
+      [
+        {
+          "pID": "L1P1",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L1P2",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L1P3",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L1P4",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L1P5",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L1P6",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L1P7",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L1P8",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L1P9",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        }
+      ],
+      [
+        {
+          "pID": "L2P1",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L2P2",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L2P3",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L2P4",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L2P5",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L2P6",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L2P7",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L2P8",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L2P9",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        }
+      ],
+      [
+        {
+          "pID": "L3P1",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L3P2",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L3P3",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L3P4",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L3P5",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L3P6",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L3P7",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L3P8",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L3P9",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        }
+      ],
+      [
+        {
+          "pID": "L4P1",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L4P2",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L4P3",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L4P4",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L4P5",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L4P6",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L4P7",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L4P8",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L4P9",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        }
+      ],
+      [
+        {
+          "pID": "L5P1",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L5P2",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L5P3",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L5P4",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L5P5",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L5P6",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L5P7",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L5P8",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        },
+        {
+          "pID": "L5P9",
+          "parked": false,
+          "carNumber": "",
+          "customerName": "",
+          "Phone": "",
+          "EntryTime": "",
+          "ExitTime": ""
+        }
+      ]
+    ],
+    "count": 5
+  }
