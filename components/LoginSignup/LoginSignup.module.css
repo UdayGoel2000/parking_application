@@ -1,0 +1,67 @@
+.mainDiv{
+    height: 100vh;
+}
+.containerDiv{
+    margin-top:20vh;
+    margin-left: 25vw;;
+    background-color: #283030;
+    opacity: .8;
+    height: 50%;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5%
+}
+.containerDiv div{
+    display: flex;
+    width: 40%;
+    padding: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    outline: none;
+    color: black;
+}
+#crossButton{
+    width: auto;
+    background-color: #283030;
+    border: 1px solid white;
+    position: absolute;
+    top: 31.5%;
+    left:73%;
+    padding: 0 3px;
+    &:hover {
+        background-color: #FF1493;
+        -webkit-filter: brightness(50%);
+        -webkit-transition: 0.2s all;
+        transform: scale(1.1);
+        border: none;
+    }
+}
+
+.button{
+    margin-top: 10px;
+    background-color: #283030;
+    border: 1px solid white;
+    padding: 5px;
+    width:80px;
+    &:hover {
+        background-color: #FF1493;
+        -webkit-filter: brightness(50%);
+        -webkit-transition: 0.2s all;
+        transform: scale(1.1);
+        border: none;
+    }
+}
+.secondaryAction{
+    font-weight:bold;
+    &:hover {
+        color: #FF1493;
+        -webkit-filter: brightness(100%);
+    }
+}
