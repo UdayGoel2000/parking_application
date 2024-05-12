@@ -1,0 +1,63 @@
+// api.tsx
+import axios from "axios";
+import { ErrorHandler } from "../utils/type"
+
+export const fetchData = async (url: string, errorHandler: ErrorHandler) => {
+  try {
+    const res = await axios.get(url);
+    return res.data;
+  } catch (err) {
+    errorHandler(err);
+  }
+};
+----------------------------------------------------------------------------------
+//common functions
+export const setLocalAttributes = (name: string, value: string) => {
+    localStorage.setItem(name,value)
+}
+export const getLocalAttributes = (name: string) => {
+  return localStorage.getItem(name)
+}
+export const removeLocalAttribute = (name: string) => {
+  localStorage.removeItem(name)
+}
+-----------------------------------------------------------------------------------
+//config.ts
+const mainApi = {
+    api: import.meta.env.VITE_API_END_POINT,
+}
+export default mainApi;
+-----------------------------------------------------------------------------------
+//type.ts
+ 
+export type typeProp = { type: 'login' | 'signup' };
+export type ErrorHandler = (e: unknown | string) => void;
+export type parkingSlot = {
+    pID: string;
+    parked: boolean;
+    carNumber: string;
+    customerName: string;
+    Phone: number | undefined;
+    EntryTime: string;
+    ExitTime: string;
+};
+export type parkingSlotPerLevel = parkingSlot[]
+export type MyState = {
+    userName: string,
+    password:string,
+    isAuth: boolean;
+    levels: parkingSlotPerLevel[];
+    levelNumber: number;
+    levelParking: parkingSlotPerLevel;
+    slotsBooked: number,
+    slotsBookedPerLevel: number,
+    isModal: boolean;
+    actionType: "add" | "delete" | "update" | "cancel";
+    error:string;
+    parkingSlotData: parkingSlot;
+}
+export type MyContext = {
+    state:MyState;
+    handleState:(obj: Partial<MyState>) => void;
+}
+------------------------------------------------------------------------------------------------------------
