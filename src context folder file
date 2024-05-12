@@ -1,0 +1,122 @@
+//Dataprovider.tsx
+import useFetch from "../hooks/useFetch";
+import { MyContext, MyState } from "../utils/type";
+import { createContext, useContext, useEffect, useReducer } from "react";
+import mainApi from "../utils/config";
+
+type Prop = { children: JSX.Element };
+
+const DataContext = createContext<MyContext | undefined>(undefined);
+
+const DataProvider = ({ children }: Prop) => {
+  const initialState: MyState = {
+    userName: "",
+    password: "",
+    isAuth: false,
+    levels: [],
+    levelNumber: 0,
+    levelParking: [],
+    slotsBooked: 0,
+    slotsBookedPerLevel: 0,
+    isModal: false,
+    actionType: "cancel",
+    error: "",
+    parkingSlotData: {
+      pID: "",
+      parked: false,
+      carNumber: "",
+      customerName: "",
+      Phone: undefined,
+      EntryTime: "",
+      ExitTime: "",
+    },
+  };
+  const reducer = (state: MyState, newState: Partial<MyState>) => ({
+    ...state,
+    ...newState,
+  });
+  const [state, setState] = useReducer(reducer, initialState);
+  const handleState = (obj: Partial<MyState>) => {
+    setState(obj);
+  };
+  const ArrayOfLevels = useFetch(mainApi.api, (e) => console.log(e));
+  const contextValue: MyContext = {
+    state,
+    handleState,
+  };
+  useEffect(() => {
+    handleState({
+      levels: ArrayOfLevels,
+    });
+  }, [ArrayOfLevels]);
+  useEffect(() => {
+    let count1 = 0;
+    let count2 = 0;
+    state.levels?.forEach((ele) =>
+      ele.forEach((obj) => obj.parked && count1++)
+    );
+
+    [
+      ...state.levels?.filter((ele, i) => i === state.levelNumber && ele),
+    ][0]?.forEach((obj) => obj.parked && count2++);
+
+    handleState({
+      levelParking: state.levels?.filter(
+        (ele, i) => i === state.levelNumber && ele
+      )[0],
+      slotsBooked: count1,
+      slotsBookedPerLevel: count2,
+    });
+  }, [state.isAuth, state.levelNumber, state.levels]);
+  useEffect(() => {
+    if (
+      state.actionType === "add" ||
+      state.actionType === "update" ||
+      state.actionType === "delete"
+    ) {
+      handleState({
+        levels: [
+          ...state.levels?.map((ele, i) =>
+            i === state.levelNumber
+              ? ele.map((obj) =>
+                  obj.pID === state.parkingSlotData.pID
+                    ? state.parkingSlotData
+                    : obj
+                )
+              : ele
+          ),
+        ],
+        actionType: "cancel",
+      });
+    }
+  }, [state.actionType]);
+  useEffect(() => {
+    if (!state.isModal)
+      handleState({
+        parkingSlotData: {
+          pID: "",
+          parked: false,
+          carNumber: "",
+          customerName: "",
+          Phone: undefined,
+          EntryTime: "",
+          ExitTime: "",
+        },
+      });
+  }, [state.isModal]);
+  return (
+    <div>
+      <DataContext.Provider value={contextValue}>
+        {children}
+      </DataContext.Provider>
+    </div>
+  );
+};
+const useMyContext = () => {
+  const context = useContext(DataContext);
+  if (!context) {
+    throw new Error("useMyContext must be used within a DataProvider");
+  }
+  return context;
+};
+export { DataProvider, useMyContext };
