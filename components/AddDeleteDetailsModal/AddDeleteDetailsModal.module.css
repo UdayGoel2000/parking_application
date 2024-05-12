@@ -1,0 +1,76 @@
+.mainDiv{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-38%);
+    height: 60%;
+    width: 80%;
+    border-radius: 10px;
+
+}
+.containerDiv{
+    position: relative;
+    background-color: #283030;
+    opacity: .9;
+    padding: 10px 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5%
+}
+.containerDiv div{
+    display: flex;
+    width: 40%;
+    padding: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    outline: none;
+    color: black;
+    width:150px;
+}
+#crossButton{
+    width: auto;
+    background-color: #283030;
+    border: 1px solid white;
+    position: absolute;
+    top: 10%;
+    right:5%;
+    padding: 0 3px;
+    &:hover {
+        background-color: #FF1493;
+        -webkit-filter: brightness(50%);
+        -webkit-transition: 0.2s all;
+        transform: scale(1.1);
+        border: none;
+    }
+}
+
+.button{
+    margin-top: 10px;
+    background-color: #283030;
+    border: 1px solid white;
+    padding: 5px;
+    width:80px;
+    &:hover {
+        background-color: #FF1493;
+        -webkit-filter: brightness(50%);
+        -webkit-transition: 0.2s all;
+        transform: scale(1.1);
+        border: none;
+    }
+}
+.errorPara{
+    position: absolute;
+    bottom: 60px;
+    color: rgb(255, 17, 17);
+    background: black;
+    font-size:  16px;
+    padding: 1px 3px;
+}
