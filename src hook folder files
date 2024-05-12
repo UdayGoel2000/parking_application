@@ -1,0 +1,18 @@
+//useFetch.tsx
+import { useEffect, useState } from "react";
+import { ErrorHandler, parkingSlotPerLevel } from "../utils/type";
+import { fetchData } from "../utils/api";
+
+const useFetch = (
+  url: string,
+  Errorhandler: ErrorHandler
+): parkingSlotPerLevel[] => {
+  const [data, setData] = useState<parkingSlotPerLevel[]>([]);
+  useEffect(() => {
+    fetchData(url, Errorhandler).then((data) =>
+      data !== undefined ? setData(data.levels) : null
+    );
+  }, []);
+  return data;
+};
+export default useFetch;
