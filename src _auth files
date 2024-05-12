@@ -1,0 +1,8 @@
+//auth.tsx
+import { getLocalAttributes } from "../utils/commonFunction";
+
+export const isAuthenticated = (userName: string, password: string) => {
+    const storedUserName = getLocalAttributes('userName')!==undefined ? getLocalAttributes('userName'):"";
+    const storedPassword = getLocalAttributes("password") !== undefined ? getLocalAttributes('password') : "";
+    return (userName === storedUserName && password === storedPassword)
+}
